@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"href="Estilos/ordena.css">
+    <link rel="icon" href="Imagenes/pastelera.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">    
+    <title>Ordenar</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <div class="menu">
+                <img src="Imagenes/pastelera.png" alt="Pasteleria" class="logo">
+                <nav>
+                    <ul>
+                        <li><a href="clase.html">Inicio</a></li>
+                        <li><a href="ordenar.html">Ordenar</a></li>
+                        <li><a href="">Sobre nosotros</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="ordena__titulo">
+                <h1> ORDENA ALGO DELICIOSO AQUI</h1>
+                <i class="fa-solid fa-arrow-down-long"></i>            
+            </div> 
+        </div>         
+    </header>
+    <!--Codigo de la parte de ordenar-->
+    <section class="ordena">
+        <div class="sabor__eleccion">
+            <p>Seleccione el sabor del pastel: </p>
+            <div class="producto">
+                <input type="radio" id="choco" name="pastel" value="choco" >
+                <label for="choco">Choco Fresa</label>
+            </div>
+            <div class="producto">
+                <input type="radio" id="fresa" name="pastel" value="fresa" >
+                <label for="fresa">Choco Vainilla</label>
+            </div>
+            <div class="producto">
+                <input type="radio" id="fresas" name="pastel" value="fresas" >
+                <label for="fresas">Fresas</label>
+            </div>
+            <div class="producto">
+                <input type="radio" id="lemon" name="pastel" value="lemon">
+                <label for="lemon">Lemon Cake</label>
+            </div>
+            <div class="producto">
+                <input type="radio" id="oreo" name="pastel" value="oreo">
+                <label for="oreo">Oreo</label>
+            </div>
+            <div class="producto">
+                <input type="radio" id="pis" name="pastel" value="pis">
+                <label for="pis">Pistache</label>
+            </div>
+            <div class="producto">
+                <input type="radio" id="fr" name="pastel" value="fr">
+                <label for="fr">Frutos Rojos</label>
+            </div>
+            <div class="producto">
+                <input type="radio" id="fru" name="pastel" value="fru">
+                <label for="fru">Frutas</label>
+            </div>
+            <div class="producto">
+                <input type="radio" id="ar" name="pastel" value="ar">
+                <label for="ar">Arándanos</label>
+            </div>
+            <div class="producto">
+                <input type="radio" id="ch" name="pastel" value="ch">
+                <label for="ch">Chocolate</label>
+            </div>           
+        </div>
+    </section>
+
+    <!--Codigo para el area de ordenar item probaremos usar displas fixed para mover por encima de ordena-->
+    <section class="ordena_items">
+        <div class="item__eleccion">
+            <p>Seleccione el adorno: </p>
+            <div>
+                <input type="radio" id="gorro" name="item" value="gorro" >
+                <label for="gorro">Gorro de fiesta</label>
+            </div>
+            <div>
+                <input type="radio" id="vela" name="item" value="vela" >
+                <label for="vela">Vela para pastel</label>
+            </div>
+            <div>
+                <input type="radio" id="globo" name="item" value="globo" >
+                <label for="globo">Globos</label>
+            </div>
+            <div>
+                <input type="radio" id="cup" name="item" value="cup">
+                <label for="cup">Cupcake variedad de sabores</label>
+            </div>
+            <div>
+                <input type="radio" id="fon" name="item" value="fon">
+                <label for="fon">Fondant</label>
+            </div>
+            <div>
+                <input type="radio" id="mer" name="item" value="mer">
+                <label for="mer">Merengue de sabores</label>
+            </div>                        
+        </div>
+    </section>
+
+    <!--Codigo para el formulario del usuario-->
+    <section>
+        <div class="formulario">
+            <h1>DATOS DEL COMPRADOR</h1>
+            <form class="datos__for" action="" id="form1" method="post">
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+                <label for="num" >Telefono: </label>
+                <input type="number" id="num" name="num" required><br><br>
+                <label for="correo">Email: </label>
+                <input type="email" id="em" name="email" required><br><br>
+                <label for="des"> Descripcion del pedido: </label>
+                <input type="text" id="desc" name="desc" required><br><br>
+                <input class="btn" id="btnOrdena" type="submit" name ="boton1" value = "ORDENAR"> 
+            </form>
+        </div>
+    </section>
+    
+    <footer class="container__footer">
+        <div class="footer__secction">
+            <h2 class="footer__title">ATENCIÓN A CLIENTES</h2>
+            <p class="footer__txt">Nuestros horarios de atención son:</p>
+            <p class="footer__txt">  Lunes a Sábado de 8:00 a 20:00 hrs            
+               Domingo de 9:00 a 18:00 hrs.            
+               Zona horaria CDMX</p>
+         </div>
+    </footer>
+</body>
+</html>

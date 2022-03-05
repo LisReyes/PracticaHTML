@@ -1,0 +1,194 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo{
+    width: 5%;
+}
+.pastel{
+    float: right;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1280px;
+    margin: auto;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+header{
+    background: url(./Pasteleria.png);       
+}
+.menu{   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+header ul{
+    display: flex;    
+}
+header ul li{
+    margin: 0 20px;    
+}
+header ul li a{
+    color: #ccc;
+}
+h1{
+    padding-top: 80px;
+    font-size: 70px;
+    font-style: italic;
+    width: 80%;
+    margin-left: 90px;
+}
+.estilo__titulo{
+    text-align: center;
+    margin-top: 70vh;
+    font-size: 35px;
+    margin: 20px 50px;
+    color:#fbfafb;
+}
+.estilo__titulo a{
+    background: #f6e2e9;
+    color: black;
+    padding: 20px 30px;    
+}
+.sabores__titulo{
+    text-align: center;
+    font-size: 45px;
+    color: #695446;
+}
+.container__descripcion{
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 5px;
+    text-align: center;    
+    border: 12px dotted #392519;
+    padding: 25px 20px;
+    background-image: src("../Pasteleria.png");
+    margin-top: 90px;
+}
+
+.pasteles__contenedor{
+    margin: 70px 40px;
+}
+
+.boton{
+    display: block;
+    border: 3px dotted #392519;
+    color: #a51a1a;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    width: 400px;
+    margin: 10px auto;
+    transition: all 0.5s;
+    font-size: 35px;
+}
+
+.container__sabores{
+    display: grid;
+    grid-template-columns: 290px 290px 290px 290px 290px ;
+    grid-gap: 20px;
+}
+.producto{
+    border: 2px solid #ccc;
+    padding: 15x;
+    text-align: center;
+    position: relative;
+}
+.produc__title{
+    font-weight: 400;
+    font-style: italic;
+}
+
+.producto::before{
+    content: "Delicioso";
+    background: #f8f8f8;
+    padding: 10px 28px;
+    width: 60px;
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    right: 5px;
+    transform: rotate(-90deg);
+    font-weight: 700;
+}
+.produc__price{
+    font-weight: bold;
+}
+
+.producto__img{    
+    padding-top: 15px;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    align-items: center;
+    transition:all 0.5s;    
+}
+.container__contenido{        
+    width: 40%;
+    z-index: 5;
+    text-align: center;    
+}
+.container__contenido li{
+    list-style: none;
+}
+
+.items__contenedor{
+    margin: 90px 50px;
+}
+.producto__item{
+    border: 2px solid #ccc;
+    padding: 15x;
+    text-align: center;
+    position: relative; 
+}
+
+.producto__item::before{
+    content: "NUEVO";
+    background: #f0c8c8;
+    padding: 10px 28px;
+    width: 60px;
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    right: 5px;
+    transform: rotate(-90deg);
+    font-weight: 700;
+}
+h2{
+    text-align: center;
+}
+.inf__container{
+    margin: 20px 40px;    
+}
+.inf__container p{
+    text-align: center;
+}
+
+.ing__container{
+    margin: 30px 120px;
+    font-style: italic;
+    border: 2px solid #D25B70;
+    text-align: center;
+}
+.container__items{
+    display: grid;
+    grid-template-columns: 450px 450px 450px;
+    grid-gap: 50px;
+}
+
+.footer__title{
+    border-bottom: 3px dotted #FBCBDB;
+    padding-bottom: 20px;
+}
